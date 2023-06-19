@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  src:
+    url(./fonts/Roboto-Thin.woff2) format('woff2'),
+    url(./fonts/Roboto-Thin.woff) format('woff'),
+    url(./fonts/Roboto-Thin.ttf) format('truetype'),
+    url(./fonts/Roboto-Thin.eot) format('eot');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  src:
+    url(./fonts/Roboto-Light.woff2) format('woff2'),
+    url(./fonts/Roboto-Light.woff) format('woff'),
+    url(./fonts/Roboto-Light.ttf) format('truetype'),
+    url(./fonts/Roboto-Light.eot) format('eot');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: italic;
+  src:
+    url(./fonts/Roboto-LightItalic.woff2) format('woff2'),
+    url(./fonts/Roboto-LightItalic.woff) format('woff'),
+    url(./fonts/Roboto-LightItalic.ttf) format('truetype'),
+    url(./fonts/Roboto-LightItalic.eot) format('eot');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
