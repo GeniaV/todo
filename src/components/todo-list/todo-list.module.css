@@ -4,6 +4,17 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  max-height: 270px;
+  overflow: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #e9d9d8;
 }
 
 .list__item {

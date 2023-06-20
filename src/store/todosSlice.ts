@@ -8,7 +8,7 @@ export type TTodo = {
   text: string,
   id: string,
   done: boolean,
-}
+};
 
 const initialState: TTodos = {
   todos: [],
