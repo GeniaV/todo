@@ -1,0 +1,59 @@
+.list__item {
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  user-select: none;
+}
+
+.list__item__text {
+  margin: 0;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 38px;
+  color: #565656;
+  border: none;
+  padding: 0;
+  vertical-align: middle;
+  line-height: 100%;
+  user-select: none;
+  align-self: self-start;
+  width: 700px;
+  text-overflow: ellipsis;
+}
+
+.list__item__text_done {
+  opacity: 30%;
+  text-decoration: line-through;
+  text-overflow: ellipsis;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.list__item__check::before {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 18px 32px 20px 12px ;
+  border: 2px solid #e8e7e7;
+  border-radius: 100%;
+  vertical-align: middle;
+  transition: 0.2s;
+  background-position: center;
+  user-select: none;
+}
+
+input[type='checkbox']:checked + .list__item__check::before {
+  border: 2px solid #6ebcaa;
+  align-self: center;
+  background-image: url(../../../public/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  user-select: none;
+}
+
+.list__item__text:checked {
+  opacity: 30%;
+  text-decoration: line-through;
+}

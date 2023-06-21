@@ -16,30 +16,6 @@
   line-height: 100%;
 }
 
-.form {
-  box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.form__input {
-  font-weight: 300;
-  font-style: normal;
-  font-size: 38px;
-  margin: 25px 0 25px 0;
-  border: none;
-  background-color: #fefefe;
-  color: #565656;
-}
-
-.form__input :active, :hover, :focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-.form__input::placeholder {
-  opacity: 30%;
-  font-style: italic;
-}
-
 .app__canvas {
   position: relative;
   top: 0;
