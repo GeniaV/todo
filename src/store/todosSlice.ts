@@ -19,7 +19,11 @@ const todosSlice = createSlice({
   initialState,
   reducers: {
     addTodo(state, action: PayloadAction<TTodo>) {
-      state.todos.push(action.payload);
+      if(state.todos.length < 100) {
+        state.todos.push(action.payload);
+      } else {
+        return;
+      };
     },
     complete(state, action: PayloadAction<TTodo>) {
       const completed = state.todos.find((item) => item.id === action.payload.id);

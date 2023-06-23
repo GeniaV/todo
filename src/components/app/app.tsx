@@ -1,3 +1,6 @@
+import ClearButton from "../clear-button/clear-button";
+import Count from "../count/count";
+import Filter from "../filter/filter";
 import NewTodo from "../new-todo/new-todo";
 import TodoList from "../todo-list/todo-list";
 import styles from "./app.module.css";
@@ -12,6 +15,11 @@ const App = () => {
         <div className={styles.app__canvas_upper}>
           <NewTodo />
           <TodoList />
+          <section className={styles.functionality}>
+            <Count />
+            <Filter />
+            <ClearButton />
+          </section>
         </div>
       </div>
     </div>
