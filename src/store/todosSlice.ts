@@ -19,7 +19,7 @@ const todosSlice = createSlice({
   initialState,
   reducers: {
     addTodo(state, action: PayloadAction<TTodo>) {
-      if(state.todos.length < 100) {
+      if (state.todos.length < 100) {
         state.todos.push(action.payload);
       } else {
         return;
@@ -27,19 +27,22 @@ const todosSlice = createSlice({
     },
     complete(state, action: PayloadAction<TTodo>) {
       const completed = state.todos.find((item) => item.id === action.payload.id);
-      if(completed) {
+      if (completed) {
         completed.done = !action.payload.done;
       }
     },
     editTodo(state, action: PayloadAction<TTodo>) {
       const editedTodo = state.todos.find((item) => item.id === action.payload.id);
-      if(editedTodo) {
+      if (editedTodo) {
         editedTodo.text = action.payload.text;
       }
+    },
+    deleteCompleted(state, action: PayloadAction<TTodo[]>) {
+      state.todos = action.payload;
     },
   }
 });
 
-export const { addTodo, complete, editTodo } = todosSlice.actions;
+export const { addTodo, complete, editTodo, deleteCompleted } = todosSlice.actions;
 
 export default todosSlice.reducer;
