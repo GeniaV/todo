@@ -2,7 +2,7 @@ import { useAppSelector } from "../..";
 import styles from "./clear-button.module.css";
 
 const ClearButton = () => {
-  const todos = useAppSelector(state => state.todos);
+  const todos = useAppSelector(state => state.data.todos);
 
   return (
     <>

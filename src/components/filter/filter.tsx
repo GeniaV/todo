@@ -1,15 +1,18 @@
-import { useState } from "react";
-import { useAppSelector } from "../..";
+import { useEffect, useState } from "react";
+import { useAppDispatch, useAppSelector } from "../..";
 import styles from "./filter.module.css";
+import { selectOption } from "../../store/filterSlice";
 
-const enum Buttons {
+export const enum Buttons {
   All = 'All',
   Active = 'Active',
   Completed = 'Completed',
-}
+};
 
 const Filter = () => {
-  const todos = useAppSelector(state => state.todos);
+  const todos = useAppSelector(state => state.data.todos);
+
+  const dispatch = useAppDispatch();
 
   const [activeButton, setActiveButton] = useState(Buttons.All);
 
@@ -25,6 +28,9 @@ const Filter = () => {
     setActiveButton(Buttons.All);
   };
 
+  useEffect(() => {
+    dispatch(selectOption(activeButton));
+  }, [activeButton, dispatch])
 
   return (
     <>

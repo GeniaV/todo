@@ -4,7 +4,7 @@ import { TTodo } from "../../store/todosSlice";
 import styles from "./count.module.css";
 
 const Count = () => {
-  const todos = useAppSelector(state => state.todos);
+  const todos = useAppSelector(state => state.data.todos);
 
   const [count, setCount] = useState<number>();
 
