@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type TTodos = {
+export type TTodos = {
   todos: TTodo[],
 };
 
