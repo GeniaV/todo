@@ -34,7 +34,7 @@ const Filter = () => {
 
   return (
     <>
-      {todos.length !== 0 && <div className={styles.filters}>
+      {todos.length !== 0 && <div data-testid="filter" className={styles.filters}>
         <button className={activeButton === Buttons.All ? styles.button_active : styles.button} onClick={showAllTodos}>
           {Buttons.All}
         </button>

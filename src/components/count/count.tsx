@@ -15,13 +15,15 @@ const Count = () => {
 
   useEffect(() => {
     countLeftItems(todos);
-  }, [todos]);
+  }, [todos, count]);
 
   return (
-    <div className={styles.cont}>
-      {todos.length !== 0 && count === 1 ? (<p className={styles.count}>{count} item left</p>) : todos.length !== 0 &&
+    <>
+      {todos.length !== 0 && <div className={styles.cont} data-testid="count">
+        {count === 1 ? (<p className={styles.count}>{count} item left</p>) :
         (<p className={styles.count}>{count} items left</p>)}
-    </div>
+      </div>}
+    </>
   );
 };
 
