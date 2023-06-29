@@ -7,7 +7,7 @@ import { deleteCompleted } from "../../store/todosSlice";
 const mockStore = configureMockStore();
 
 describe("ClearButton", () => {
-  test("renders without errors at first, when state is empty", () => {
+  it("renders without errors at first, when state is empty", () => {
     const store = mockStore({
       data: { todos: [] },
     });
@@ -21,7 +21,7 @@ describe("ClearButton", () => {
     expect(screen.queryByText("Clear Completed")).toBe(null);
   });
 
-  test("renders without errors at first, when state is not empty", () => {
+  it("renders without errors at first, when state is not empty", () => {
     const store = mockStore({
       data: {
         todos: [{ text: "Написать прекрасный код", id: "V1StGXR8_Z5jdHi6B-myT", done: true },
@@ -38,7 +38,7 @@ describe("ClearButton", () => {
     expect(screen.getByText("Clear Completed")).toBeInTheDocument();
   });
 
-  test("dispatches deleteCompleted action on button click", () => {
+  it("dispatches deleteCompleted action on button click", () => {
     const store = mockStore({
       data: {
         todos: [{ text: "Написать прекрасный код", id: "V1StGXR8_Z5jdHi6B-myT", done: true },

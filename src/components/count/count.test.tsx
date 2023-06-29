@@ -6,7 +6,7 @@ import Count from "./count";
 const mockStore = configureMockStore();
 
 describe("Count", () => {
-  test("renders without errors at first, when state is empty", () => {
+  it("renders without errors at first, when state is empty", () => {
     const store = mockStore({
       data: { todos: [] },
     });
@@ -20,7 +20,7 @@ describe("Count", () => {
     expect(screen.queryByTestId("count")).toBe(null);
   });
 
-  test("renders without errors at first, when state is not empty", () => {
+  it("renders without errors at first, when state is not empty", () => {
     const store = mockStore({
       data: {
         todos: [{ text: "Написать прекрасный код", id: "V1StGXR8_Z5jdHi6B-myT", done: true },

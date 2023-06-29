@@ -16,7 +16,7 @@ const NewTodo = () => {
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form className={styles.form} name="form" onSubmit={handleSubmit}>
       <div className={styles.form__dropdown}></div>
       <input className={styles.form__input} value={inputValue} type="text" placeholder="What needs to be done?"
         onChange={(e) => setInputValue(e.target.value)} />

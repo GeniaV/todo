@@ -7,7 +7,7 @@ import { selectOption } from "../../store/filterSlice";
 const mockStore = configureMockStore();
 
 describe("Filter", () => {
-  test("renders without errors at first, when state is empty", () => {
+  it("renders without errors at first, when state is empty", () => {
     const store = mockStore({
       data: { todos: [] },
     });
@@ -21,7 +21,7 @@ describe("Filter", () => {
     expect(screen.queryByTestId("filter")).toBe(null);
   });
 
-  test("renders without errors at first, when state is not empty", () => {
+  it("renders without errors at first, when state is not empty", () => {
     const store = mockStore({
       data: {
         todos: [{ text: "Написать прекрасный код", id: "V1StGXR8_Z5jdHi6B-myT", done: true },
@@ -38,7 +38,7 @@ describe("Filter", () => {
     expect(screen.getByTestId("filter")).toBeInTheDocument();
   });
 
-  test("should call showCompletedTodos when Completed button is clicked", () => {
+  it("should call showCompletedTodos when Completed button is clicked", () => {
     const store = mockStore({
       data: {
         todos: [{ text: "Написать прекрасный код", id: "V1StGXR8_Z5jdHi6B-myT", done: true },
@@ -60,7 +60,7 @@ describe("Filter", () => {
     expect(store.dispatch).toHaveBeenCalledWith(selectOption(Buttons.Completed))
   });
 
-  test("should call showAllTodos when All button is clicked", () => {
+  it("should call showAllTodos when All button is clicked", () => {
     const store = mockStore({
       data: {
         todos: [{ text: "Написать прекрасный код", id: "V1StGXR8_Z5jdHi6B-myT", done: true },
@@ -82,7 +82,7 @@ describe("Filter", () => {
     expect(store.dispatch).toHaveBeenCalledWith(selectOption(Buttons.All))
   });
 
-  test("should call showActiveTodos when Active button is clicked", () => {
+  it("should call showActiveTodos when Active button is clicked", () => {
     const store = mockStore({
       data: {
         todos: [{ text: "Написать прекрасный код", id: "V1StGXR8_Z5jdHi6B-myT", done: true },
