@@ -57,7 +57,7 @@ describe("NewTodo", () => {
 
     store.dispatch = jest.fn();
   
-    const inputElement = screen.getByRole("textbox") as HTMLInputElement;;
+    const inputElement = screen.getByRole("textbox") as HTMLInputElement;
     const formElement = screen.getByRole("form");
   
     fireEvent.change(inputElement, { target: { value: "New task" } });

@@ -39,7 +39,7 @@
 ![Результат](README_static/result.jpg)
 
 ## Stack
-HTML, CSS, JavaScript, React, TypeScript, Redux Tooklit, Testing Library, Redux Mock Store
+HTML, CSS, JavaScript, React, TypeScript, Redux Tooklit, Testing Library, Redux Mock Store, Jest
 
 ## Запуск проект
 
