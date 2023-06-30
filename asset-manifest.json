@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/todo/static/css/main.09cf60c7.css",
+    "main.js": "/todo/static/js/main.3dd9069d.js",
+    "static/js/787.7ab45602.chunk.js": "/todo/static/js/787.7ab45602.chunk.js",
+    "static/media/Roboto-LightItalic.eot": "/todo/static/media/Roboto-LightItalic.0ad9ca04101ace1b39d1.eot",
+    "static/media/Roboto-LightItalic.ttf": "/todo/static/media/Roboto-LightItalic.ca7144f68f54653d3728.ttf",
+    "static/media/Roboto-Thin.eot": "/todo/static/media/Roboto-Thin.ae807ad4142f3eae2e0c.eot",
+    "static/media/Roboto-Thin.ttf": "/todo/static/media/Roboto-Thin.7d12c80b1925091e4fec.ttf",
+    "static/media/Roboto-Light.eot": "/todo/static/media/Roboto-Light.d592a653abb7a57fedd8.eot",
+    "static/media/Roboto-Light.ttf": "/todo/static/media/Roboto-Light.13d61ef8e609b548d9b5.ttf",
+    "static/media/Roboto-LightItalic.woff": "/todo/static/media/Roboto-LightItalic.3c494714cdd1de859813.woff",
+    "static/media/Roboto-Light.woff": "/todo/static/media/Roboto-Light.df0f59d80526acc6d0cd.woff",
+    "static/media/Roboto-Thin.woff": "/todo/static/media/Roboto-Thin.674b1d2bd9d781457c17.woff",
+    "static/media/Roboto-LightItalic.woff2": "/todo/static/media/Roboto-LightItalic.6006fa5b67e554e06562.woff2",
+    "static/media/Roboto-Light.woff2": "/todo/static/media/Roboto-Light.d537674e9e217fa53a13.woff2",
+    "static/media/Roboto-Thin.woff2": "/todo/static/media/Roboto-Thin.0b33782009e32497dba2.woff2",
+    "index.html": "/todo/index.html",
+    "static/media/check.svg": "/todo/static/media/check.9aab68aa0251a6863619.svg",
+    "static/media/arrow.svg": "/todo/static/media/arrow.d36c9b8d0e2e3b066a4d.svg",
+    "main.09cf60c7.css.map": "/todo/static/css/main.09cf60c7.css.map",
+    "main.3dd9069d.js.map": "/todo/static/js/main.3dd9069d.js.map",
+    "787.7ab45602.chunk.js.map": "/todo/static/js/787.7ab45602.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09cf60c7.css",
+    "static/js/main.3dd9069d.js"
+  ]
+}
