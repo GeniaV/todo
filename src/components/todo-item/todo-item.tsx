@@ -29,7 +29,7 @@ const TodoItem: React.FunctionComponent<TTodo> = (item: TTodo) => {
 
   return (
     <li className={styles.list__item} key={item.id}>
-      <input type="checkbox" name='checkbox' id={item.id} onChange={() => hadleCheckedChange(item)} checked={checkedTodo}/>
+      <input type="checkbox" data-cy='todo-checkbox' name='checkbox' id={item.id} onChange={() => hadleCheckedChange(item)} checked={checkedTodo}/>
       <label htmlFor={item.id} className={styles.list__item__check}>
         <input type="text" value={item.text} className={!item.done
           ? styles.list__item__text : `${styles.list__item__text} ${styles.list__item__text_done}`} onChange={(e) => handleChange(e, item)} />
